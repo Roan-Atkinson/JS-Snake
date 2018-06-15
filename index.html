@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Snake</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="favicon.png">
+    </head>
+
+	<body>
+
+		<div id="introBack">
+			<div class="intro" id="intro">
+				<h2>Welcome to Snake</h2>
+				Player:
+				<input type="color" id="color1" value="#00ff00">
+				<input class="input" id="nameInput" type="text" placeholder="Name" autofocus>
+				<br>
+				<br>
+				<button class="button" onclick="gogo()">Submit</button>
+			</div>
+      <div id="modScreen">
+        <h2>Snake Mods</h2>
+        Player:<br>
+        &nbsp;Speed: <input class="input" id="player1speed" type="number" value="70"><br>
+      </div>
+		</div>
+
+		<div id="game">
+
+			<table id="table"></table>
+
+		</div>
+
+		<div id="countdown"></div>
+
+
+		<div id="rightScore" class="score">
+			<span id="name1"></span><br><br>
+			Score: <span id="score1"></span><br><br>
+			<span id="output1"></span>
+		</div>
+
+
+		<div id="restart">
+			<h3>Restart</h3>
+			<button onclick="restart()">Restart</button>
+			<br><br>
+		</div>
+
+
+
+		<script src="script.js"></script>
+    </body>
+
+</html>

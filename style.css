@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+body {
+    background-color: transparent;
+    background-image: url('background.jpg');
+    background-size: cover;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#game {
+    z-index: 99;
+    width: 565px;
+    display: none;
+    margin: 20px auto 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0.8;
+}
+
+#table {
+    background-color: gray;
+    margin: 0 auto;
+    border-spacing: 0;
+}
+
+.td {
+    /*border: 1px solid black;*/
+    height: 5px;
+    width: 5px;
+}
+
+#introBack {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.intro {
+    display: block;
+    border: 2px solid black;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: 150px auto 0 auto;
+    position: absolute;
+    border-radius: 20px;
+    background-color: gray;
+    opacity: 0.7;
+    height: 300px;
+    width: 600px;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.noAnimation {
+	animation-name: none !important;
+}
+
+@keyframes slideIn {
+    0% {
+        margin: -300px auto 0 auto;
+    }
+    100% {
+        margin: 150px auto 0 auto;
+    }
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.input {
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+#nameInput2 {
+    opacity: 0;
+}
+
+.button {
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding 5px;
+    background-color: white;
+    outline: none;
+}
+
+.score {
+    font-size: 30px;
+    display: none;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin: 0 auto;
+    text-align: left;
+    top: 100px;
+    border: 2px solid black;
+    background-color: gray;
+    padding: 20px;
+}
+
+#leftScore {
+    left: 30px;
+    opacity: 0.7;
+}
+
+#rightScore {
+    right: 30px;
+    opacity: 0.7;
+}
+
+#name1, #name2, #output1, #output2 {
+    font-weight: bold;
+}
+
+#color1, #color2 {
+    height: 20px;
+    width: 20px;
+    border: none;
+}
+
+#restart {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    margin: 0 auto 60px auto;
+    position: absolute;
+    border-radius: 20px;
+    background-color: gray;
+    opacity: 0.7;
+    width: 300px;
+    display: none;
+}
+
+#countdown {
+    z-index: 100;
+    position: absolute;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+    bottom: 400px;
+    display: none;
+}
+
+#modScreen {
+    display: none;
+    border: 2px solid black;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: 150px auto 0 auto;
+    position: absolute;
+    border-radius: 20px;
+    background-color: gray;
+    opacity: 0.7;
+    height: 300px;
+    width: 600px;
+}
